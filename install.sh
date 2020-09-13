@@ -113,7 +113,7 @@ install(){
     {
       "v": "2",
       "ps": "v2ray-WebSocket+TLS IBM United States",
-      "add": "${IBM_APP_NAME}.us-south.cf.appdomain.cloud",
+      "add": "${IBM_APP_NAME}.eu-gb.cf.appdomain.cloud",
       "port": "443",
       "id": "${UUID}",
       "aid": "64",
@@ -130,7 +130,7 @@ EOF
 
 }
 
-ibmcloud login -a "https://cloud.ibm.com" -r "us-south"
+ibmcloud login -a "https://cloud.ibm.com" -r "eu-gb"
 clone_repo
 create_mainfest_file
 install
